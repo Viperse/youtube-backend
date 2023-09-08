@@ -13,8 +13,8 @@ public class Category {
 
     @Id
     @Column(name = "category_code")
-    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "categorySequence")
-    @SequenceGenerator(name = "categorySequence", sequenceName = "SEQ_CATEGORY", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "categorySequence") // sequence 컬럼이라고 지정
+    @SequenceGenerator(name = "categorySequence", sequenceName = "SEQ_CATEGORY", allocationSize = 1) // sequence 연결
     private int categoryCode;
 
     @Column(name = "category_name")
