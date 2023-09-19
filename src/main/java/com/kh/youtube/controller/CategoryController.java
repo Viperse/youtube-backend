@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/*")
+@CrossOrigin(origins = {"*"}, maxAge = 6000) // CORS 정책 위반에 대한 오류를 해결
 public class CategoryController {
 
     @Autowired
